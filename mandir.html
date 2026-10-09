@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Mandir Dham | पवित्र मंदिर</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff6f00;
+            --secondary-color: #fff8e1;
+            --text-dark: #333;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #ff8f00, #e65100);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+        header h1 {
+            font-family: 'Yatra One', cursive;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin-top: 5px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #e65100;
+            border-bottom: 2px solid #ffcc80;
+            padding-bottom: 8px;
+        }
+        .timings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .timing-card {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 5px solid var(--primary-color);
+            text-align: center;
+        }
+        .gallery, .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+        .gallery img, .video-gallery iframe {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>श्री मंदिर धाम</h1>
+        <p>आस्था, शांति और दिव्यता का प्रतीक</p>
+    </header>
+
+    <nav>
+        <a href="#about">परिचय</a>
+        <a href="#timings">आरती समय</a>
+        <a href="#gallery">तस्वीरें</a>
+        <a href="#videos">वीडियो क्लिप्स</a>
+        <a href="#contact">संपर्क</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>मंदिर का इतिहास और महिमा</h2>
+            <p>श्री मंदिर धाम क्षेत्र का एक अत्यंत प्राचीन और पावन स्थल है। यहाँ आने वाले श्रद्धालुओं को आत्मिक शांति की प्राप्ति होती है। मंदिर की वास्तुकला और प्राकृतिक वातावरण इसे बेहद खास बनाते हैं। यहाँ साल भर धार्मिक उत्सवों और मेलों का आयोजन किया जाता है।</p>
+        </section>
+
+        <!-- Timings Section -->
+        <section id="timings">
+            <h2>दैनिक दर्शन एवं आरती का समय</h2>
+            <div class="timings-grid">
+                <div class="timing-card">
+                    <h3>प्रातः काल</h3>
+                    <p>मंगल आरती: सुबह 5:30 बजे</p>
+                    <p>श्रृंगार दर्शन: सुबह 6:30 बजे</p>
+                </div>
+                <div class="timing-card">
+                    <h3>संध्या काल</h3>
+                    <p>संध्या आरती: शाम 7:00 बजे</p>
+                    <p>शयन दर्शन: रात्रि 8:30 बजे</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>पवित्र झलकियाँ (Gallery)</h2>
+            <div class="gallery">
+                <!-- Yahan aap apni mandir ki photos ke links ya folder path daal sakte hain -->
+                <img src="https://images.unsplash.com/photo-1609137144813-75246977bf67?auto=format&fit=crop&w=600&q=80" alt="Mandir View 1">
+                <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80" alt="Mandir View 2">
+            </div>
+        </section>
+
+        <!-- Video Clips Section -->
+        <section id="videos">
+            <h2>आरती और उत्सव क्लिप्स (Videos)</h2>
+            <p>आप यहाँ अपने मंदिर की YouTube shorts या videos की link embed कर सकते हैं:</p>
+            <div class="video-gallery">
+                <!-- Example YouTube Embed - Apne video ka link yahan lagayein -->
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Mandir Video" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>संपर्क सूत्र & स्थान</h2>
+            <p><strong>पत्ता:</strong> मुख्य मार्ग, मंदिर चौराहा, जिला - मध्य प्रदेश</p>
+            <p><strong>विशेष सूचना:</strong> विशेष पर्वों पर मंदिर के कपाट श्रद्धालुओं के लिए देर रात तक खुले रहते हैं।</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 श्री मंदिर धाम. सर्वाधिकार सुरक्षित.</p>
+    </footer>
+
+</body>
+</html>
